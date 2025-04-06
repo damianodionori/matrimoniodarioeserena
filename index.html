@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario & Serena - Il Nostro Matrimonio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Dario & Serena</h1>
+            <p class="wedding-date">08 Dicembre 2025</p>
+            <div id="countdown" class="countdown">
+                <div>
+                    <span id="days">00</span>
+                    <span class="label">Giorni</span>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <span class="label">Ore</span>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <span class="label">Minuti</span>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <span class="label">Secondi</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div class="container">
+            <a href="#" class="logo">D&S</a>
+            <ul class="menu">
+                <li><a href="#storia">La Nostra Storia</a></li>
+                <li><a href="#dettagli">Dettagli</a></li>
+                <li><a href="#programma">Programma</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#lista-nozze">Lista Nozze</a></li>
+                <li><a href="#info">Info Utili</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="benvenuto" class="section">
+            <div class="container">
+                <h2 class="section-title">Benvenuti</h2>
+                <div class="welcome-content">
+                    <img src="/api/placeholder/400/600" alt="Dario e Serena" class="couple-photo">
+                    <div class="welcome-text">
+                        <p>Carissimi amici e familiari,</p>
+                        <p>Siamo felici di invitarvi a celebrare con noi il giorno del nostro matrimonio. Questo sito contiene tutte le informazioni utili per il grande giorno.</p>
+                        <p>Con affetto,<br>Dario e Serena</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="storia" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">La Nostra Storia</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Maggio 2015</div>
+                        <div class="timeline-content">
+                            <h3>Il Primo Incontro</h3>
+                            <p>Ci siamo conosciuti nella congregazione di Orbetello. Dario ha subito notato Serena, ma ci è voluto del coraggio per fare il primo passo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dicembre 2023</div>
+                        <div class="timeline-content">
+                            <h3>La Proposta</h3>
+                            <p>Durante un pomeriggio in spiaggia, Dario ha fatto la domanda. La risposta è stata ovviamente "Sì!"</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Febbraio 2024</div>
+                        <div class="timeline-content">
+                            <h3>Il Primo Viaggio</h3>
+                            <p>Una vacanza in Marocco ci ha fatto capire quanto fossimo compatibili e quanto amassimo passare il tempo insieme.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dicembre 2025</div>
+                        <div class="timeline-content">
+                            <h3>Il Grande Giorno</h3>
+                            <p>E finalmente celebriamo il nostro amore con le persone a noi più care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dettagli" class="section">
+            <div class="container">
+                <h2 class="section-title">Dettagli del Matrimonio</h2>
+                <div class="details-grid">
+                    <div class="detail-card ceremony">
+                        <i class="fas fa-church"></i>
+                        <h3>Cerimonia</h3>
+                        <p class="detail-time">11:00</p>
+                        <p class="detail-location">Sala del Regno dei Testimoni di Geova di Orbetello</p>
+                        <p class="detail-address">Strada dell'Airone, 226, Orbetello (GR)</p>
+                        <a href="#" class="map-link" data-map="https://maps.google.com/?q=Chiesa+di+Santa+Maria+Via+Roma+123+Città">Visualizza mappa</a>
+                    </div>
+                    <div class="detail-card reception">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>Ricevimento</h3>
+                        <p class="detail-time">12:00</p>
+                        <p class="detail-location">Podere Maremma</p>
+                        <p class="detail-address">Strada Regionale 74, 170-172, Albinia</p>
+                        <a href="#" class="map-link" data-map="https://maps.google.com/?q=Villa+Belvedere+Strada+Provinciale+45+Città">Visualizza mappa</a>
+                    </div>
+                </div>
+                <div id="map-container" class="map-container">
+                    <iframe id="google-map" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="programma" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Programma della Giornata</h2>
+                <div class="schedule">
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:00</div>
+                        <div class="schedule-content">
+                            <h3>Cerimonia</h3>
+                            <p>Sala del Regno dei Testimoni di Geova di Orbetello</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">12:00</div>
+                        <div class="schedule-content">
+                            <h3>Aperitivo di Benvenuto</h3>
+                            <p>Podere Maremma</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">13:00</div>
+                        <div class="schedule-content">
+                            <h3>Pranzo</h3>
+                            <p>Podere Maremma</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">15:00</div>
+                        <div class="schedule-content">
+                            <h3>Taglio della Torta</h3>
+                            <p>Podere Maremma</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">16:00</div>
+                        <div class="schedule-content">
+                            <h3>Festa e Balli</h3>
+                            <p>Fino a tarda notte!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp" class="section">
+            <div class="container">
+                <h2 class="section-title">RSVP</h2>
+                <p class="section-subtitle">Conferma la tua presenza entro il 15 Settembre 2025</p>
+                <form id="rsvp-form" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Nome e Cognome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="attending">Parteciperai?</label>
+                        <select id="attending" name="attending" required>
+                            <option value="">Seleziona...</option>
+                            <option value="yes">Sì, parteciperò</option>
+                            <option value="no">No, non potrò partecipare</option>
+                        </select>
+                    </div>
+                    <div id="guests-section" class="form-group hidden">
+                        <label for="guests">Numero di persone (te incluso)</label>
+                        <select id="guests" name="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div id="dietary-section" class="form-group hidden">
+                        <label for="dietary">Esigenze alimentari particolari?</label>
+                        <textarea id="dietary" name="dietary" rows="3" placeholder="Es. vegetariano, vegano, allergie, intolleranze..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messaggio per gli sposi (opzionale)</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia</button>
+                </form>
+                <div id="rsvp-confirmation" class="rsvp-confirmation hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Grazie per aver confermato la tua presenza! Non vediamo l'ora di festeggiare insieme.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lista-nozze" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Lista Nozze</h2>
+                <p class="registry-message">La vostra presenza è il dono più grande. Tuttavia, per chi volesse contribuire al nostro viaggio di nozze:</p>
+                <div class="registry-options">
+                    <div class="registry-option">
+                        <i class="fas fa-gift"></i>
+                        <h3>Lista Nozze Online</h3>
+                        <p>Abbiamo creato una lista nozze presso "Nome Negozio"</p>
+                        <a href="#" class="btn btn-outline" target="_blank">Visita la Lista</a>
+                    </div>
+                    <div class="registry-option">
+                        <i class="fas fa-plane"></i>
+                        <h3>Contributo Viaggio di Nozze</h3>
+                        <p>Se preferite contribuire al nostro viaggio di nozze in Guatemala:</p>
+                        <div class="iban-box">
+                            <p>IBAN: IT12A3456789012345678901234</p>
+                            <p>Intestato a: Dario Dionori e Serena Iavarone</p>
+                            <p>Causale: Viaggio di nozze</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info" class="section">
+            <div class="container">
+                <h2 class="section-title">Informazioni Utili</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Dress Code</h3>
+                        <p>Elegante. Si consiglia un abito scuro per gli uomini e un vestito da cocktail per le donne.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Parcheggio</h3>
+                        <p>Ampio parcheggio disponibile presso Podere Maremma. È disponibile anche un servizio navetta dalla Sala del Regno alla location.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-hotel"></i>
+                        <h3>Pernottamento</h3>
+                        <p>Per gli ospiti che vengono da lontano, abbiamo concordato tariffe speciali con questo hotel nelle vicinanze:</p>
+                        <ul>
+                            <li>Hotel Corallo - Codice sconto: MATRIMONIODS</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-baby"></i>
+                        <h3>Bambini</h3>
+                        <p>I bambini sono i benvenuti. Sarà disponibile un angolo dedicato con animazione durante la cena e la festa.</p>
+                    </div>
+                </div>
+                <div class="faq-section">
+                    <h3>Domande Frequenti</h3>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Posso portare un accompagnatore?</h4>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sì, il tuo invito è esteso a un accompagnatore. Ti preghiamo di indicarlo nel modulo RSVP.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Quali sono le condizioni meteo previste?</h4>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>A Dicembre il clima è generalmente freddo. Il ricevimento si svolgerà all'interno, ma consigliamo di portare un coprispalle per la sera.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>È previsto un servizio navetta?</h4>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sì, sarà disponibile un servizio navetta dalla Sala del Regno alla location del ricevimento e viceversa a fine serata.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Alcuni momenti speciali della nostra storia</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="/api/placeholder/400/300" alt="Dario e Serena">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/api/placeholder/400/300" alt="Dario e Serena">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/api/placeholder/400/300" alt="Dario e Serena">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/api/placeholder/400/300" alt="Dario e Serena">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/api/placeholder/400/300" alt="Dario e Serena">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/api/placeholder/400/300" alt="Dario e Serena">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guestbook" class="section">
+            <div class="container">
+                <h2 class="section-title">Guestbook</h2>
+                <p class="section-subtitle">Lascia un messaggio agli sposi</p>
+                <div class="guestbook-form">
+                    <form id="guestbook-form">
+                        <div class="form-group">
+                            <label for="guestbook-name">Nome</label>
+                            <input type="text" id="guestbook-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestbook-message">Il tuo messaggio</label>
+                            <textarea id="guestbook-message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Invia messaggio</button>
+                    </form>
+                </div>
+                <div id="guestbook-messages" class="guestbook-messages">
+                    <!-- I messaggi saranno aggiunti qui dinamicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Dario & Serena</p>
+                    <p>Con affetto, vi aspettiamo l'8 Dicembre 2025</p>
+                </div>
+                <div class="footer-heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
