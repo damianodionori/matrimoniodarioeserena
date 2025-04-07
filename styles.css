@@ -106,7 +106,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; /* ensure text is white for good contrast */
+    color: white;
 }
 
 .hero::before {
@@ -114,10 +114,10 @@ a:hover {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('images/mani.jpeg'); /* replace with your real image */
+    background-image: url('images/mani.jpeg');
     background-size: cover;
     background-position: center;
-    opacity: 0.7; /* control how subtle you want it: 0.3 - 0.5 looks good */
+    opacity: 0.7;
     z-index: 1;
 }
 
@@ -904,3 +904,9 @@ footer {
     background-color: #ddd;
   }
   
+  .credits {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6); /* Light, subtle color */
+    text-align: center;
+    margin-top: 1rem;
+}
