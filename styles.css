@@ -673,6 +673,16 @@ textarea {
     display: block;
 }
 
+.gallery-caption {
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-style: italic;
+    border-top: 1px solid #eee;
+}
+
 /* Guestbook Section */
 .guestbook-form {
     max-width: 600px;
