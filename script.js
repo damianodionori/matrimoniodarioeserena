@@ -58,34 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // RSVP form visibility conditions
-    const attendingSelect = document.getElementById('attending');
-    const guestsSection = document.getElementById('guests-section');
-    const dietarySection = document.getElementById('dietary-section');
-    
-    attendingSelect.addEventListener('change', () => {
-        if (attendingSelect.value === 'yes') {
-            guestsSection.classList.remove('hidden');
-            dietarySection.classList.remove('hidden');
-        } else {
-            guestsSection.classList.add('hidden');
-            dietarySection.classList.add('hidden');
-        }
-    });
-    
-    // RSVP form submission
-    const rsvpForm = document.getElementById('rsvp-form');
-    const rsvpConfirmation = document.getElementById('rsvp-confirmation');
-    
-    if (rsvpForm) {
-        rsvpForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // In a real implementation, you would send the form data to a server
-            // For demo purposes, we'll just show the confirmation message
-            rsvpForm.classList.add('hidden');
-            rsvpConfirmation.classList.remove('hidden');
-        });
-    }
+
     
     // FAQ accordion
     const faqItems = document.querySelectorAll('.faq-item');

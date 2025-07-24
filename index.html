@@ -146,45 +146,30 @@
             <div class="container">
                 <h2 class="section-title">RSVP</h2>
                 <p class="section-subtitle">Conferma la tua presenza entro il 15 Settembre 2025</p>
-                <form id="rsvp-form" class="rsvp-form">
-                    <div class="form-group">
-                        <label for="name">Nome e Cognome</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="rsvp-content">
+                    <div class="rsvp-info">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Conferma la tua partecipazione</h3>
+                        <p>Per confermare la tua presenza al nostro matrimonio, clicca sul pulsante qui sotto. Verrai reindirizzato a un form dove potrai inserire:</p>
+                        <ul>
+                            <li>Il tuo nome e cognome</li>
+                            <li>La conferma di partecipazione</li>
+                            <li>Il numero di persone nel tuo gruppo</li>
+                            <li>I nomi di tutti i partecipanti</li>
+                            <li>Eventuali allergie o esigenze alimentari</li>
+                        </ul>
+                        <p class="rsvp-note">Le risposte verranno raccolte automaticamente e ci aiuteranno a organizzare al meglio la giornata.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="rsvp-action">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Orr9Yb6VfjsQvFRiuKg8ItKnLFbK3h9cJoXy9sQC26nL0g/viewform?usp=sharing&ouid=106869762168035041224" target="_blank" class="btn btn-primary btn-large">
+                            <i class="fas fa-external-link-alt"></i>
+                            Compila il Form RSVP
+                        </a>
+                        <p class="rsvp-contact">
+                            <i class="fas fa-phone"></i>
+                            Per domande: Serena 3893159067 | Dario 3207048025
+                        </p>
                     </div>
-                    <div class="form-group">
-                        <label for="attending">Parteciperai?</label>
-                        <select id="attending" name="attending" required>
-                            <option value="">Seleziona...</option>
-                            <option value="yes">Sì, parteciperò</option>
-                            <option value="no">No, non potrò partecipare</option>
-                        </select>
-                    </div>
-                    <div id="guests-section" class="form-group hidden">
-                        <label for="guests">Numero di persone (te incluso)</label>
-                        <select id="guests" name="guests">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div id="dietary-section" class="form-group hidden">
-                        <label for="dietary">Esigenze alimentari particolari?</label>
-                        <textarea id="dietary" name="dietary" rows="3" placeholder="Es. vegetariano, vegano, allergie, intolleranze..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Messaggio per gli sposi (opzionale)</label>
-                        <textarea id="message" name="message" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Invia</button>
-                </form>
-                <div id="rsvp-confirmation" class="rsvp-confirmation hidden">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Grazie per aver confermato la tua presenza! Non vediamo l'ora di festeggiare insieme.</p>
                 </div>
             </div>
         </section>
