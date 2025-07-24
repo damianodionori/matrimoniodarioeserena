@@ -79,38 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Guestbook form submission
-    const guestbookForm = document.getElementById('guestbook-form');
-    const guestbookMessages = document.getElementById('guestbook-messages');
-    
-    if (guestbookForm) {
-        guestbookForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const name = document.getElementById('guestbook-name').value;
-            const message = document.getElementById('guestbook-message').value;
-            const date = new Date().toLocaleDateString('it-IT');
-            
-            // Create new message element
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('guestbook-message');
-            messageElement.innerHTML = `
-                <div class="guestbook-message-header">
-                    <span class="guestbook-message-name">${name}</span>
-                    <span class="guestbook-message-date">${date}</span>
-                </div>
-                <div class="guestbook-message-content">
-                    <p>${message}</p>
-                </div>
-            `;
-            
-            // Add to the messages container
-            guestbookMessages.prepend(messageElement);
-            
-            // Reset form
-            guestbookForm.reset();
-        });
-    }
+
     
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
