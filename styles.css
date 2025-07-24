@@ -485,51 +485,88 @@ a:hover {
     color: var(--accent-color);
 }
 
-/* RSVP Form */
-.rsvp-form {
-    max-width: 600px;
+/* RSVP Section */
+.rsvp-content {
+    max-width: 800px;
     margin: 0 auto;
     background-color: white;
-    padding: 30px;
-    border-radius: 8px;
+    padding: 40px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
 }
 
-.form-group {
+.rsvp-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rsvp-info i {
+    font-size: 3rem;
+    color: var(--accent-color);
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
+.rsvp-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 
-input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+.rsvp-info p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-textarea {
-    resize: vertical;
-}
-
-.rsvp-confirmation {
+.rsvp-info ul {
     text-align: center;
-    padding: 30px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+    max-width: 500px;
+    margin: 20px auto;
+    list-style: none;
 }
 
-.rsvp-confirmation i {
-    font-size: 3rem;
-    color: #4CAF50;
-    margin-bottom: 15px;
+.rsvp-info li {
+    padding: 8px 0;
+    position: relative;
+    text-align: center;
+}
+
+.rsvp-info li::before {
+    content: "✓ ";
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.rsvp-note {
+    background-color: var(--light-color);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.rsvp-action {
+    text-align: center;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.rsvp-contact {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.rsvp-contact i {
+    margin-right: 5px;
+    color: var(--accent-color);
 }
 
 .hidden {
@@ -877,6 +914,19 @@ footer {
     .section-title {
         font-size: 2rem;
     }
+    
+    .rsvp-content {
+        padding: 30px 20px;
+    }
+    
+    .rsvp-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .rsvp-info ul {
+        max-width: 100%;
+    }
+    
     .gallery-grid {
         grid-template-columns: 1fr 1fr; /* two columns on tablets/phones */
       }
@@ -923,6 +973,20 @@ footer {
     .schedule-content {
         padding-left: 30px;
     }
+    
+    .rsvp-content {
+        padding: 20px 15px;
+    }
+    
+    .rsvp-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .btn-large {
+        padding: 14px 24px;
+        font-size: 1.1rem;
+    }
+    
     .gallery-grid {
         grid-template-columns: 1fr; /* one column on very small devices */
       }
