@@ -754,44 +754,7 @@ a:hover {
     border-top: 1px solid #eee;
 }
 
-/* Guestbook Section */
-.guestbook-form {
-    max-width: 600px;
-    margin: 0 auto 40px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
 
-.guestbook-messages {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.guestbook-message {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.guestbook-message-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.guestbook-message-name {
-    font-weight: 600;
-    color: var(--accent-color);
-}
-
-.guestbook-message-date {
-    color: #888;
-    font-size: 0.9rem;
-}
 
 /* Footer */
 footer {
